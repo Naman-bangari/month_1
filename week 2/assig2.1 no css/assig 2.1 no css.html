@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <center>
+        <h1>Simple Calculator</h1>
+        <fieldset style="width: 20%;">
+            <legend>Math.h</legend>
+        <table border="2" >
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="result" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="appendValue('1')">1</button></td>
+                <td><button onclick="appendValue('2')">2</button></td>
+                <td><button onclick="appendValue('3')">3</button></td>
+                <td><button onclick="appendValue('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendValue('4')">4</button></td>
+                <td><button onclick="appendValue('5')">5</button></td>
+                <td><button onclick="appendValue('6')">6</button></td>
+                <td><button onclick="appendValue('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendValue('7')">7</button></td>
+                <td><button onclick="appendValue('8')">8</button></td>
+                <td><button onclick="appendValue('9')">9</button></td>
+                <td><button onclick="appendValue('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="clearResult()">C</button></td>
+                <td><button onclick="appendValue('0')">0</button></td>
+                <td><button onclick="calculate()">=</button></td>
+                <td><button onclick="appendValue('/')">/</button></td>
+            </tr>
+        </table>
+    </fieldset>
+    </center>
+<script src="1.js"></script>
+</body>
+</html>
